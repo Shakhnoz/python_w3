@@ -1,0 +1,64 @@
+def birthyear(age):
+    year_of_birth = 2021 - age
+    print(f"You were born in {year_of_birth}")
+    
+birthyear(18)
+
+-----------------------------------------------------------------
+def leap_year(year):
+    if year % 400 == 0 or year % 100 != 0 and year % 4 == 0:
+        print(f"{year} is a leap year")
+    else:
+        print(f"{year} isn't a leap year")
+        
+leap_year(2004)
+------------------------------------------------------------------
+
+def square_area(side):
+    sq_area = side**2
+    print(sq_area)
+
+square_area(7)
+-----------------------------------------------------------------
+
+def mean_value(values):
+    print(sum(values)/len(values))
+mean_value([1,2,3,4])
+-----------------------------------------------------------------
+
+def cube(x):
+    print(x**3)
+cube(9)
+-----------------------------------------------------------------
+
+def absolute_value(value):
+    if value >= 0:
+        print(value)
+    else:
+        print(-value)
+        
+absolute_value(-9)
+-----------------------------------------------------------------
+
+def last_item(*products):
+    print(products[-1])
+last_item("abc", "hsdgf", "sdkfh")
+-----------------------------------------------------------------
+
+def print_students(group):
+    for student in group:
+        print(student)
+students = ["Sara", "Nelly", "Alex", "Nick"]
+print_student(students)
+-----------------------------------------------------------------
+
+def days_in_week(week):
+    print(f"There are {week * 7} days in {week} week") 
+    
+days_in_week(8)
+-----------------------------------------------------------------
+PI = 3.14
+def cirle_area(radius):
+    area = PI * radius ** 2
+    return area
+cirle_area(5)
